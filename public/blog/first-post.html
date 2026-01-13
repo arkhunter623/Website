@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My New Static Site! | Arkhunter623</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Ark<span>Hunter</span></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+                    <div class="container">
+                        <article class="card" style="border:none; background: transparent;">
+                            <h1 class="section-title" style="text-align:left; margin-bottom: 0.5rem;">Welcome to My New Static Site!</h1>
+                            <p style="color:var(--text-muted); margin-bottom: 2rem;">Sun Jan 07 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</p>
+                            <div class="prose">
+                                <h1>Hello World!</h1>
+<p>Welcome to the new <strong>arkhunter623.us</strong>!</p>
+<p>I decided to migrate away from WordPress to conserve server resources and have more control over my website&#39;s design. This entire site is now built with:</p>
+<ul>
+<li><strong>HTML5 &amp; CSS3</strong> (No bulky frameworks)</li>
+<li><strong>Node.js</strong> (For building the static files)</li>
+<li><strong>Markdown</strong> (For writing these blog posts)</li>
+</ul>
+<h2>Why the switch?</h2>
+<p>WordPress is great, but it requires a database (MySQL) and PHP processing for every single page load. By switching to a static site, I generate the HTML <em>once</em> on my computer, and the server just serves simple files. This is much faster and uses a fraction of the power!</p>
+<p>Expect more updates soon!</p>
+
+                            </div>
+                            <br>
+                            <a href="../blog.html">← Back to Blog</a>
+                        </article>
+                    </div>
+                
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Phoenix Johnson (Arkhunter623). All Rights Reserved.</p>
+        <div class="socials">
+            <!-- Add social icons here later -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

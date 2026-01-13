@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homelab | Arkhunter623</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Ark<span>Hunter</span></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+    <a href="projects.html" style="margin-bottom: 2rem; display: inline-block;">&larr; Back to Projects</a>
+
+    <h1 class="section-title">My Homelab</h1>
+
+    <section style="margin-bottom: 3rem;">
+        <h2>The Rack</h2>
+        <p>I run a custom server rack hosting various services for learning and utility.</p>
+        <ul style="margin-left: 2rem; margin-top: 1rem; color: var(--text-muted);">
+            <li><strong>Servers:</strong><br>
+    - Dell PowerEdge R720<br>
+    - 7x Dell Poweredge R520
+</li>
+            <li><strong>Storage:</strong> Dell Poweredge T320 running TrueNAS with roughly ***TB of Stoarge.</li>
+            <li><strong>Networking:</strong> Dell Optiplex Serving as a OPNSENSE firewall</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Self-Hosted Services</h2>
+        <div class="grid" style="margin-top: 2rem;">
+            <div class="card">
+                <h3>Media</h3>
+                <p>Jellyfin, Arr Stack, Calibre</p>
+            </div>
+            <div class="card">
+                <h3>Infrastructure</h3>
+                <p>Docker, Portainer, Proxmox</p>
+            </div>
+            <div class="card">
+                <h3>Home Automation</h3>
+                <p>Home Assistant, Z2M, MQTT</p>
+            </div>
+        </div>
+    </section>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Phoenix Johnson (Arkhunter623). All Rights Reserved.</p>
+        <div class="socials">
+            <!-- Add social icons here later -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

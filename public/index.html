@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Arkhunter623</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Ark<span>Hunter</span></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+    <h1>WELCOME TO MY SITE!</h1>
+    <p>
+        "Hello! I'm Phoenix (She/They). Whether you found me as arkhunter or through my callsign N8ARK, welcome. I'm happily married to Skylar (N8SKY). 
+        Please note: If you cannot respect who I am, kindly close this page now.
+    </p>
+    <div style="margin-top: 2rem;">
+        <a href="projects.html" class="btn">View My Projects</a>
+        <a href="about.html" class="btn" style="margin-left: 1rem; border-color:#fff; color:#fff;">More About Me</a>
+    </div>
+</section>
+
+<div class="container">
+    <h2 class="section-title">Latest Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>402Chasers</h3>
+            <p>Storm chasing and weather spotting.</p>
+        </div>
+        <div class="card">
+            <h3>AIARC</h3>
+            <p>All Inclusive Amateur Radio Club.</p>
+        </div>
+        <div class="card">
+            <h3>My Homelab</h3>
+            <p>Self-hosted services and networking.</p>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Phoenix Johnson (Arkhunter623). All Rights Reserved.</p>
+        <div class="socials">
+            <!-- Add social icons here later -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
