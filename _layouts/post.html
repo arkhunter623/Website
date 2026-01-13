@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="container">
+    <article class="card" style="border:none; background: transparent;">
+        <h1 class="section-title" style="text-align:left; margin-bottom: 0.5rem;">{{ page.title }}</h1>
+        <p style="color:var(--text-muted); margin-bottom: 2rem;">{{ page.date | date_to_string }}</p>
+        <div class="prose">
+            {{ content }}
+        </div>
+        <br>
+        <a href="{{ " /blog.html" | relative_url }}">← Back to Blog</a>
+    </article>
+</div>

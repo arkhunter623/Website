@@ -1,0 +1,55 @@
+---
+layout: default
+title: Contact Me
+---
+<div class="container">
+    <h1 class="section-title">Contact Me</h1>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+        <div>
+            <h2>Get In Touch</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                If you have any questions regarding any information found on my website or have a general inquiry for me
+                feel free to reach out using the information below!
+            </p>
+
+            <div style="margin-bottom: 1.5rem;">
+                <h3 style="color: #fff;">Location</h3>
+                <p>Omaha, Ne (PO Box coming Soon)</p>
+            </div>
+
+            <div>
+                <h3 style="color: #fff;">Email</h3>
+                <p><a href="mailto:arkhunter@arkhunter623.us">arkhunter@arkhunter623.us</a></p>
+            </div>
+        </div>
+
+        <div class="card" style="border-color: var(--primary-purple); box-shadow: 0 0 15px rgba(191,0,255,0.1);">
+            <form action="https://formsubmit.co/arkhunter@arkhunter623.us" method="POST">
+                <input type="hidden" name="_next" value="https://arkhunter623.us/contact.html">
+                <label style="display:block; margin-bottom:0.5rem; color:#fff;">Your Name</label>
+                <input type="text" name="name" required placeholder="John Doe">
+
+                <label style="display:block; margin-bottom:0.5rem; color:#fff;">Email Address</label>
+                <input type="email" name="email" required placeholder="john@example.com">
+
+                <label style="display:block; margin-bottom:0.5rem; color:#fff;">Your Message</label>
+                <textarea name="message" rows="5" required placeholder="Hello Phoenix..."></textarea>
+
+                <button type="submit" class="btn" style="width:100%; cursor:pointer;">Send Message</button>
+            </form>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 1rem; text-align: center;">
+                Powered by FormSubmit.co
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        div[style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+        }
+    }
+</style>

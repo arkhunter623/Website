@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Arkhunter623</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ " /assets/css/style.css" | relative_url }}">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Ark<span>Hunter</span></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="{{ " /" | relative_url }}">Home</a></li>
+                <li><a href="{{ " /projects.html" | relative_url }}">Projects</a></li>
+                <li><a href="{{ " /blog.html" | relative_url }}">Blog</a></li>
+                <li><a href="{{ " /about.html" | relative_url }}">About</a></li>
+                <li><a href="{{ " /contact.html" | relative_url }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Phoenix Johnson (Arkhunter623). All Rights Reserved.</p>
+        <div class="socials">
+            <!-- Add social icons here later -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
